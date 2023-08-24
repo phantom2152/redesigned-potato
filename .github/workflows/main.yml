@@ -6,3 +6,12 @@ jobs:
     steps:
       - name: build project
         run: echo "hello"
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - name: install react
+        run: npm install react
+      - name: node version
+        run: node -v
